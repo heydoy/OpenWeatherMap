@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ko")
-        dateFormatter.dateFormat = "MM월 dd일 HH시 mm분"
+        dateFormatter.dateFormat = "M월 dd일 HH시 mm분"
         timeLabel.text = dateFormatter.string(from: Date())
     }
     

@@ -30,14 +30,19 @@ class APIManager {
                 
                 var weather = Weather()
                 
-                weather.main = json["weather"]["main"].stringValue
-                weather.description = json["weather"]["description"].stringValue
-                weather.icon = json["weather"]["icon"].stringValue
+                let weatherInfo = json["weather"].arrayValue[0]
                 
-                weather.temp = json["main"]["temp"].doubleValue
-                weather.feels_like = json["main"]["feels_like"].doubleValue
-                weather.temp_min = json["main"]["temp_min"].doubleValue
-                weather.temp_max = json["main"]["temp_max"].doubleValue
+                weather.name = json["name"].stringValue
+                weather.id = weatherInfo["id"].intValue
+                weather.main = weatherInfo["main"].stringValue
+                weather.description = weatherInfo["description"].stringValue
+                weather.icon = weatherInfo["icon"].stringValue
+                print(weather.icon)
+                
+                weather.temp = json["main"]["temp"].doubleValue - 273
+                weather.feels_like = json["main"]["feels_like"].doubleValue - 273
+                weather.temp_min = json["main"]["temp_min"].doubleValue - 273
+                weather.temp_max = json["main"]["temp_max"].doubleValue - 273
                 weather.pressure = json["main"]["pressure"].doubleValue
                 weather.humidity = json["main"]["humidity"].doubleValue
                 

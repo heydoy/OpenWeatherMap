@@ -161,7 +161,6 @@ extension ViewController: CLLocationManagerDelegate {
          }
         
         
-        locationManager.stopUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

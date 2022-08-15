@@ -64,10 +64,10 @@ class ViewController: UIViewController {
     
     func makeInfoText() {
         weatherInfoArray = [
-            "현재 온도는 \(String(format: "%.2f", weatherInfo.temp))도 ,체감온도는 \(String(format: "%.2f", weatherInfo.feels_like))도에요",
-            "오늘 최고온도는 \(String(format: "%.2f", weatherInfo.temp_max))도, 최저온도는 \(String(format: "%.2f", weatherInfo.temp_min))도입니다.",
+            "현재 온도🌡는 \(String(format: "%.2f", weatherInfo.temp))도 , 체감온도🤒는 \(String(format: "%.2f", weatherInfo.feels_like))도에요",
+            "오늘 최고온도🔥는 \(String(format: "%.2f", weatherInfo.temp_max))도, 최저온도❄️는 \(String(format: "%.2f", weatherInfo.temp_min))도입니다.",
             
-            "오늘 습도는 \(String(format: "%.2f", weatherInfo.humidity))% 에요.",
+            "오늘 습도💦는 \(String(format: "%.2f", weatherInfo.humidity))% 에요.",
             "오늘 날씨는 \(weatherInfo.getWeatherText(id: weatherInfo.id))입니다."
         ]
     }

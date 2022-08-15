@@ -19,6 +19,7 @@
 		A2A558AC28AA7508000E6F0A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A2A558AB28AA7508000E6F0A /* Kingfisher */; };
 		A2A558B228AA7531000E6F0A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A2A558B128AA7531000E6F0A /* Alamofire */; };
 		A2A558B528AA7546000E6F0A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A2A558B428AA7546000E6F0A /* SwiftyJSON */; };
+		A2A558B728AA76F1000E6F0A /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A558B628AA76F1000E6F0A /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A2A558A228AA745C000E6F0A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A2A558A628AA748A000E6F0A /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		A2A558A828AA749A000E6F0A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A2A558B628AA76F1000E6F0A /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A2A558A628AA748A000E6F0A /* Keys.swift */,
+				A2A558B628AA76F1000E6F0A /* WeatherModel.swift */,
 				A2A558A828AA749A000E6F0A /* APIManager.swift */,
 			);
 			path = Network;
@@ -184,6 +187,7 @@
 				A2A558A728AA748A000E6F0A /* Keys.swift in Sources */,
 				A2A558A928AA749A000E6F0A /* APIManager.swift in Sources */,
 				A2A5588E28AA7363000E6F0A /* AppDelegate.swift in Sources */,
+				A2A558B728AA76F1000E6F0A /* WeatherModel.swift in Sources */,
 				A2A5589028AA7363000E6F0A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
